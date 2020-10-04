@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Masks</title>
+
+	<script type="text/javascript" charset="utf-8" async defer>
+	  
+     function mostrarc1() {
+     	document.getElementById('c1').style.backgroundColor="#1E90FF";
+     }
+
+     function mostrarc2() {
+     	document.getElementById('c1').style.backgroundColor="#1E90FF";   		
+     	document.getElementById('c2').style.backgroundColor="#1E90FF";
+    
+     }
+
+     function mostrarc3(){
+     	document.getElementById('c1').style.backgroundColor="#1E90FF";   		
+     	document.getElementById('c2').style.backgroundColor="#1E90FF";
+     	document.getElementById('c3').style.backgroundColor="#1E90FF";
+     	document.writhe("Gracias por visistarnos");
+     }
+
+     function mostrarc4(){
+     	document.getElementById('c1').style.backgroundColor="#1E90FF";   		
+     	document.getElementById('c2').style.backgroundColor="#1E90FF";
+     	document.getElementById('c3').style.backgroundColor="#1E90FF";
+     	document.getElementById('c4').style.backgroundColor="#1E90FF";
+     }
+
+     function mostrarc5(){
+     	document.getElementById('c1').style.backgroundColor="#1E90FF";   		
+     	document.getElementById('c2').style.backgroundColor="#1E90FF";
+     	document.getElementById('c3').style.backgroundColor="#1E90FF";
+     	document.getElementById('c4').style.backgroundColor="#1E90FF";
+     	document.getElementById('c5').style.backgroundColor="#1E90FF";
+     }
+
+     function desmarcarc1(){
+     	document.getElementById('c2').style.backgroundColor="#F2F2F2";
+     	document.getElementById('c3').style.backgroundColor="#F2F2F2";
+     	document.getElementById('c4').style.backgroundColor="#F2F2F2";
+     	document.getElementById('c5').style.backgroundColor="#F2F2F2";
+     }
+
+     function desmarcarc2(){
+     	document.getElementById('c3').style.backgroundColor="#F2F2F2";
+     	document.getElementById('c4').style.backgroundColor="#F2F2F2";
+     	document.getElementById('c5').style.backgroundColor="#F2F2F2";
+     }
+
+     function desmarcarc3(){
+     	document.getElementById('c4').style.backgroundColor="#F2F2F2";
+     	document.getElementById('c5').style.backgroundColor="#F2F2F2";
+     }
+
+     function desmarcarc4(){
+     	document.getElementById('c5').style.backgroundColor="#F2F2F2";
+     }
+    
+     function agradecimiento(){
+    	alert("Gracias por Visitarnos");
+    	document.getElementById('c1').style.backgroundColor="#F2F2F2"; 
+    	document.getElementById('c2').style.backgroundColor="#F2F2F2";
+     	document.getElementById('c3').style.backgroundColor="#F2F2F2";
+     	document.getElementById('c4').style.backgroundColor="#F2F2F2";
+     	document.getElementById('c5').style.backgroundColor="#F2F2F2";
+     }
+
+    </script>
+
+	<style type="text/css" media="screen">
+		
+		.titulo{
+			
+			font-family: Verdana; 
+			text-align: center;
+			font-size: 40px;
+			margin-top: 50px;
+		}
+
+		.fondo{
+         background-color: rgba(216, 216, 216, 0.5);
+         
+		}
+
+		.contenido{
+			
+			background-color: white;
+			margin: auto;
+			width: 800px;
+			margin-top: -50px;
+			height: 850px;	
+		}
+
+		p{
+			font-family: Vedana;
+			font-size: 20px;
+		}
+	</style>
+
+</head>		
+<body class="fondo">
+
+	<div align="center" class="contenido">
+
+		<br>	<h1 class="titulo"> Masks </h1>
+
+	   <img src="https://imgs.xkcd.com/comics/masks.png" alt="Haunted Halloween masks from a mysterious costume shop that turn you evil and grow into your skin score a surprisingly high 80% filtration efficiency in R. L. Stine-sponsored NIOSH tests." height="500" >
+
+	   <p>¿Qu&eacute te pareci&oacute el comic?</p>
+
+	   <input type="submit"  id="c1" value="1" style="padding: 10px; font-size: 15px; align-content: center;  background-color: #F2F2F2;  font-weight: bold;"  onclick="mostrarc1()" ondblclick="desmarcarc1()"></input>
+	   <input type="submit" id="c2" value="2" style="padding: 10px; font-size: 15px; align-content: center; background-color: #F2F2F2; font-weight: bold;" onclick="mostrarc2()" ondblclick="desmarcarc2()"></input>
+	   <input type="submit" id="c3" value="3" style="padding: 10px; font-size: 15px; align-content: center; background-color: #F2F2F2; font-weight: bold;" onclick="mostrarc3()" ondblclick="desmarcarc3()"></input>
+	   <input type="submit" id="c4" value="4" style="padding: 10px; font-size: 15px; align-content: center; background-color: #F2F2F2;  font-weight: bold; " onclick="mostrarc4()" ondblclick="desmarcarc4()"></input>
+	   <input type="submit" id="c5" value="5" style="padding: 10px; font-size: 15px; align-content: center; background-color: #F2F2F2;  font-weight: bold;" onclick="mostrarc5()" ondblclick="desmarcarc5()"> <br><br>
+	   <input type="submit" name="" value="Enviar" style="font-size: 15px; align-content: center; background-color: #D8D8D8; font-weight: bold; padding: 5px; border-radius: 8px" onclick="agradecimiento()"></input>
+    </div>
+
+</body>
+</html>
